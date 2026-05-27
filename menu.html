@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Waltop Catering's delicious menu featuring meat pies, chicken pies, cakes, and more. Order now for delivery or pickup.">
+    <meta name="keywords" content="menu, meat pie, chicken pie, cake, pastries, snacks, catering menu, Waltop">
+    <meta name="author" content="Waltop Catering Services">
+    
+    <title>Our Menu | Waltop Catering Services</title>
+    <link rel="icon" type="image/x-icon" href="waltop.jpeg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Fixed Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container" aria-label="Main navigation">
+            <a href="index.html" class="nav__logo">
+                <span class="logo-text">Waltop</span>
+                <span class="logo-tagline">Catering</span>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="menu.html" class="nav__link active" aria-current="page">Menu</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+
+                <button class="nav__close" id="nav-close" aria-label="Close menu">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <div class="nav__actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+                <a href="contact.html" class="btn btn--primary nav__cta">Get Quote</a>
+                <button class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="page-hero__parallax" aria-hidden="true"></div>
+            <div class="container">
+                <div class="page-hero__content fade-in">
+                    <span class="page-hero__subtitle">Discover Our</span>
+                    <h1 class="page-hero__title">Delicious Menu</h1>
+                    <p class="page-hero__description">
+                        From savory pies to sweet cakes, explore our carefully crafted 
+                        selection of treats made fresh daily.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Categories Navigation -->
+        <section class="menu-nav section--sm">
+            <div class="container">
+                <div class="menu-nav__wrapper fade-in">
+                    <button class="menu-nav__btn active" data-category="all">All Items</button>
+                    <button class="menu-nav__btn" data-category="pies">Savory Pies</button>
+                    <button class="menu-nav__btn" data-category="cakes">Cakes</button>
+                    <button class="menu-nav__btn" data-category="pastries">Pastries</button>
+                    <button class="menu-nav__btn" data-category="chops">Small Chops & Snacks</button>
+                    <button class="menu-nav__btn" data-category="crunch">Crunchy Bites</button>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Items Grid -->
+        <section class="menu section" id="menu">
+            <div class="container">
+                <div class="menu__grid" id="menu-grid">
+                    <!-- Meat Pie -->
+                    <article class="menu__card fade-in" data-category="pies">
+                        <div class="menu__image">
+                            <img 
+                                src="meat pie.webp" 
+                                alt="Classic Meat Pie" 
+                                loading="lazy"
+                            >
+                            <span class="menu__badge menu__badge--bestseller">Best Seller</span>
+                        </div>
+                        <div class="menu__content">
+                            <div class="menu__header">
+                                <h3 class="menu__title">Classic Meat Pie</h3>
+                                <span class="menu__price">₦1,000 per one</span>
+                            </div>
+                            <p class="menu__description">
+                                Seasoned minced beef in a golden, flaky pastry shell. 
+                                Our signature recipe perfected over years.
+                            </p>
+                            <div class="menu__tags">
+                                <span class="menu__tag"><i class="fas fa-fire"></i> Hot</span>
+                                <span class="menu__tag"><i class="fas fa-drumstick-bite"></i> Protein-rich</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Chicken Pie -->
+                    <article class="menu__card fade-in" data-category="pies">
+                        <div class="menu__image">
+                            <img 
+                                src="chicken pie.jpeg" 
+                                alt="Herb Chicken Pie" 
+                                loading="lazy"
+                            >
+                            <span class="menu__badge menu__badge--popular">Popular</span>
+                        </div>
+                        <div class="menu__content">
+                            <div class="menu__header">
+                                <h3 class="menu__title"> Chicken Pie</h3>
+                                <span class="menu__price">₦1,200 per one</span>
+                            </div>
+                            <p class="menu__description">
+                                Tender chicken pieces with savory filling in a 
+                                creamy sauce, wrapped in buttery pastry.
+                            </p>
+                            <div class="menu__tags">
+                                <span class="menu__tag"><i class="fas fa-leaf"></i> Savory Delight</span>
+                                <span class="menu__tag"><i class="fas fa-fire"></i> Hot</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Cup Cake -->
+                    <article class="menu__card fade-in" data-category="cakes">
+                        <div class="menu__image">
+                            <img 
+                                src="cup cakes.jpg" 
+                                alt="Cup Cakes" 
+                                loading="lazy"
+                            >
+                            <span class="menu__badge menu__badge--veg">Soft and fluffy</span>
+                        </div>
+                        <div class="menu__content">
+                            <div class="menu__header">
+                                <h3 class="menu__title">Cup Cakes</h3>
+                                <span class="menu__price">₦500 per one</span>
+                            </div>
+                            <p class="menu__description">
+                                Fresh seasonal vegetables in a savory sauce, 
+                                perfect for vegetarian lovers.
+                            </p>
+                            <div class="menu__tags">
+                                <span class="menu__tag"><i class="fas fa-seedling"></i> Sweet Treat</span>
+                                <span class="menu__tag"><i class="fas fa-heart"></i> Fluffy</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Fish Pie -->
+                    <article class="menu__card fade-in" data-category="pies">
+                        <div class="menu__image">
+                            <img 
+                                src="fish pie.jpg" 
+                                alt="Fish Pie" 
+                                loading="lazy"
+                            >
+                            <span class="menu__badge menu__badge--new">New</span>
+                        </div>
+                        <div class="menu__content">
+                            <div class="menu__header">
+                                <h3 class="menu__title">Fish Pie</h3>
+                                <span class="menu__price">₦1,000 per one</span>
+                            </div>
+                            <p class="menu__description">
+                                Premium fish in a creamy sauce, 
+                                topped with golden puff pastry.
+                            </p>
+                            <div class="menu__tags">
+                                <span class="menu__tag"><i class="fas fa-fish"></i> Seafood</span>
+                                <span class="menu__tag"><i class="fas fa-star"></i> Premium</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Birthday Cake -->
+                    <article class="menu__card fade-in" data-category="cakes">
+                        <div class="menu__image">
+                            <img 
+                                src="original cake.jpeg" 
+                                alt="Custom Birthday Cake" 
+                                loading="lazy"
+                            >
+                            <span class="menu__badge menu__badge--custom">Custom</span>
+                        </div>
+                        <div class="menu__content">
+                            <div class="menu__header">
+                                <h3 class="menu__title">Birthday Celebration Cake</h3>
+                                <span class="menu__price">From ₦25,000</span>
+                            </div>
+                            <p class="menu__description">
+                                Custom-designed birthday cakes with your choice of 
+                                flavors, fillings, and decorations.
+                            </p>
+                            <div class="menu__tags">
+                                <span class="menu__tag"><i class="fas fa-birthday-cake"></i> Custom</span>
+                                <span class="menu__tag"><i class="fas fa-palette"></i> Decorative</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Wedding Cake -->
+                    <article class="menu__card fade-in" data-category="cakes">
+                        <div class="menu__image">
+                            <img 
+                                src="wedding cake.jpg" 
+                                alt="Elegant Wedding Cake" 
+                                loading="lazy"
+                            >
+                            <span class="menu__badge menu__badge--premium">Premium</span>
+                        </div>
+                        <div class="menu__content">
+                            <div class="menu__header">
+                                <h3 class="menu__title">Elegant Wedding Cake</h3>
+                                <span class="menu__price">From ₦50,000</span>
+                            </div>
+                            <p class="menu__description">
+                                Elegant masterpieces designed to make your 
+                                special day even more memorable.
+                            </p>
+                            <div class="menu__tags">
+                                <span class="menu__tag"><i class="fas fa-ring"></i> Wedding</span>
+                                <span class="menu__tag"><i class="fas fa-gem"></i> Luxury</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Red Velvet Cake -->
+                    <article class="menu__card fade-in" data-category="cakes">
+                        <div class="menu__image">
+                            <img 
+                                src="red velvet.jpeg" 
+                                alt="Red Velvet Cake" 
+                                loading="lazy"
+                            >
+                            <span class="menu__badge menu__badge--popular">Popular</span>
+                        </div>
+                        <div class="menu__content">
+                            <div class="menu__header">
+                                <h3 class="menu__title">Classic Red Velvet</h3>
+                                <span class="menu__price">₦15,000</span>
+                            </div>
+                            <p class="menu__description">
+                                Velvety smooth cake with cream cheese frosting, 
+                                a timeless classic everyone loves.
+                            </p>
+                            <div class="menu__tags">
+                                <span class="menu__tag"><i class="fas fa-star"></i> Classic</span>
+                                <span class="menu__tag"><i class="fas fa-cheese"></i> Velvety & Soft</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Milky Doughnut -->
+                    <article class="menu__card fade-in" data-category="pastries">
+                        <div class="menu__image">
+                            <img 
+                                src="milky doughnut.jpeg" 
+                                alt="milky doughnut" 
+                                loading="lazy"
+                            >
+                        </div>
+                        <div class="menu__content">
+                            <div class="menu__header">
+                                <h3 class="menu__title">Milky Doughnut</h3>
+                                <span class="menu__price">₦1,000 per one</span>
+                            </div>
+                            <p class="menu__description">
+                                Creamy Bliss.
+                            </p>
+                            <div class="menu__tags">
+                                <span class="menu__tag"><i class="fas fa-sun"></i> Breakfast</span>
+                                <span class="menu__tag"><i class="fas fa-bread-slice"></i> Fresh</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Plain Doughnut -->
+                    <article class="menu__card fade-in" data-category="pastries">
+                        <div class="menu__image">
+                            <img 
+                                src="plain doughnut.jpeg" 
+                                alt="Plain Doughnut" 
+                                loading="lazy"
+                            >
+                        </div>
+                        <div class="menu__content">
+                            <div class="menu__header">
+                                <h3 class="menu__title">Classic Doughnut</h3>
+                                <span class="menu__price">₦200 per one</span>
+                            </div>
+                            <p class="menu__description">
+                                Soft,fluffy and perfectly sweet-just the way a doughnut should be.
+                            </p>
+                            <div class="menu__tags">
+                                <span class="menu__tag"><i class="fas fa-apple-alt"></i> Simple Delight</span>
+                                <span class="menu__tag"><i class="fas fa-candy-cane"></i> Sweet</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Puff Puff -->
+                    <article class="menu__card fade-in" data-category="pastries">
+                        <div class="menu__image">
+                            <img 
+                                src="puff puff original.jpeg" 
+                                alt="Puff Puff" 
+                                loading="lazy"
+                            >
+                            <span class="menu__badge menu__badge--bestseller">Spicy Treat</span>
+                        </div>
+                        <div class="menu__content">
+                            <div class="menu__header">
+                                <h3 class="menu__title">Spicy Puff Puff</h3>
+                                <span class="menu__price">₦100 per one</span>
+                            </div>
+                            <p class="menu__description">
+                                Crispy outside, soft inside, with a spicy kick that excites every bite.
+                            </p>
+                            <div class="menu__tags">
+                                <span class="menu__tag"><i class="fas fa-fire"></i> Hot</span>
+                                <span class="menu__tag"><i class="fas fa-drumstick-bite"></i> Savory</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Buns  -->
+                    <article class="menu__card fade-in" data-category="pastries">
+                        <div class="menu__image">
+                            <img 
+                                src="buns.jpeg" 
+                                alt="Buns" 
+                                loading="lazy"
+                            >
+                        </div>
+                        <div class="menu__content">
+                            <div class="menu__header">
+                                <h3 class="menu__title">Golden Buns</h3>
+                                <span class="menu__price">₦100 per one</span>
+                            </div>
+                            <p class="menu__description">
+                                Its simple, appealing, and tells the customer the bun is soft,fluffy and ready to enjoy.
+                            </p>
+                            <div class="menu__tags">
+                                <span class="menu__tag"><i class="fas fa-cookie "></i> Crunchy</span>
+                                <span class="menu__tag"><i class="fas fa-sun"></i> Breakfast</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Small Chops -->
+                    <article class="menu__card fade-in" data-category="chops">
+                        <div class="menu__image">
+                            <img 
+                                src="small chops.jpeg" 
+                                alt="Small Chops" 
+                                loading="lazy"
+                            >
+                            <span class="menu__badge menu__badge--new"><i>Chef's Special</i></span>
+                        </div>
+                        <div class="menu__content">
+                            <div class="menu__header">
+                                <h3 class="menu__title">Small Chops & Snacks</h3>
+                                <span class="menu__price">₦2,500 per one</span>
+                            </div>
+                            <p class="menu__description">
+                                Delicious bite-sized favorites for every occasion-crispy, savory and perfect
+                                for sharing. From golden <strong>samosas</strong> and crunchy well-filled <strong>spring rolls</strong>,
+                                 tender <strong> mini beef</strong>,
+                                and sweet <strong>soft puff puff</strong>, there's something for everyone.
+                            </p>
+                            <div class="menu__tags">
+                                <span class="menu__tag"><i class="fas fa-lemon"></i> Fresh</span>
+                                <span class="menu__tag"><i class="fas fa-heart"></i> Healthy</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Egg rolls-->
+                    <article class="menu__card fade-in" data-category="chops">
+                        <div class="menu__image">
+                            <img 
+                                src="egg rolls.jpg" 
+                                alt="Egg rolls" 
+                                loading="lazy"
+                            >
+                            
+                        </div>
+                        <div class="menu__content">
+                            <div class="menu__header">
+                                <h3 class="menu__title">Egg rolls</h3>
+                                <span class="menu__price">₦500 per one</span>
+                            </div>
+                            <p class="menu__description">
+                                Golden, crispy, and packed with flavor- a juicy meat coating hugs a perfectly boiled
+                                egg for the ultimate savory snack.
+                            </p>
+                            <div class="menu__tags">
+                                <span class="menu__tag"><i class="fas fa-cookie"></i> Golden Crust</span>
+                                <span class="menu__tag"><i class="fas fa-cookie"></i> Protein Pastry</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!--Potato chips-->
+                    <article class="menu__card fade-in" data-category="crunch">
+                        <div class="menu__image">
+                            <img 
+                                src="Potato chips.webp" 
+                                alt="Egg rolls" 
+                                loading="lazy"
+                            >
+                             <span class="menu__badge menu__badge--new"><i>Price may vary depending on size</i></span>
+                        </div>
+                        <div class="menu__content">
+                            <div class="menu__header">
+                                <h3 class="menu__title">Potato Chips</h3>
+                                <span class="menu__price">₦500 per one</span>
+                                
+                            </div>
+                            <p class="menu__description">
+                                Crispy and perfectly seasoned-the ultimate crunch snack for any time of the day.
+                                
+                            </p>
+                            <div class="menu__tags">
+                                <span class="menu__tag"><i class="fas fa-cookie"></i> Crispy Bites</span>
+                                <span class="menu__tag"><i class="fas fa-cookie"></i> Perfect Crunch</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!--Chin chin-->
+                    <article class="menu__card fade-in" data-category="crunch">
+                        <div class="menu__image">
+                            <img 
+                                src="Chin-chin.webp" 
+                                alt="Chin Chin" 
+                                loading="lazy"
+                            >
+                            
+                             <span class="menu__badge menu__badge--new"><i>Price may vary depending on size</i></span>
+                        </div>
+                        <div class="menu__content">
+                            <div class="menu__header">
+                                <h3 class="menu__title">Chin Chin</h3>
+                                <span class="menu__price">₦500 per one</span>
+                            </div>
+                            <p class="menu__description">
+                                Crunch, bite-sized, and sweet- a classic treat that's impossible to resist.
+                            </p>
+                            <div class="menu__tags">
+                                <span class="menu__tag"><i class="fas fa-cookie"></i> Sweet Crunch</span>
+                                <span class="menu__tag"><i class="fas fa-cookie"></i> Classic Snack</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Packages Section -->
+        <section class="pricing section section--alt" id="pricing">
+            <div class="container">
+                <div class="section__header fade-in">
+                    <span class="section__subtitle">Catering Packages</span>
+                    <h2 class="section__title">Event Catering Pricing</h2>
+                    <p class="section__description">
+                        Choose from our carefully curated catering packages designed 
+                        to suit events of all sizes.
+                    </p>
+                </div>
+
+                <div class="pricing__grid">
+                    <!-- Basic Package -->
+                    <div class="pricing__card fade-in">
+                        <div class="pricing__header">
+                            <h3 class="pricing__name">Basic</h3>
+                            <p class="pricing__subtitle">Perfect for small gatherings</p>
+                            <div class="pricing__price">
+                                <span class="price__currency">₦</span>
+                                <span class="price__amount">90,000</span>
+                                <span class="price__period">/ 20 guests</span>
+                            </div>
+                        </div>
+                        <ul class="pricing__features">
+                            <li class="pricing__feature">
+                                <i class="fas fa-check"></i>
+                                <span>Assorted meat & chicken pies (40 pcs)</span>
+                            </li>
+                            <li class="pricing__feature">
+                                <i class="fas fa-check"></i>
+                                <span>Mini sausage rolls (20 pcs)</span>
+                            </li>
+                            <li class="pricing__feature">
+                                <i class="fas fa-check"></i>
+                                <span>Soft drinks included</span>
+                            </li>
+                            <li class="pricing__feature">
+                                <i class="fas fa-check"></i>
+                                <span>Disposable serving ware</span>
+                            </li>
+                            <li class="pricing__feature pricing__feature--disabled">
+                                <i class="fas fa-times"></i>
+                                <span>Custom cake</span>
+                            </li>
+                            <li class="pricing__feature pricing__feature--disabled">
+                                <i class="fas fa-times"></i>
+                                <span>On-site service</span>
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="btn btn--outline btn--block">Get Started</a>
+                    </div>
+
+                    <!-- Standard Package -->
+                    <div class="pricing__card pricing__card--featured fade-in">
+                        <span class="pricing__popular">Most Popular</span>
+                        <div class="pricing__header">
+                            <h3 class="pricing__name">Standard</h3>
+                            <p class="pricing__subtitle">Great for medium events</p>
+                            <div class="pricing__price">
+                                <span class="price__currency">₦</span>
+                                <span class="price__amount">210,000</span>
+                                <span class="price__period">/ 50 guests</span>
+                            </div>
+                        </div>
+                        <ul class="pricing__features">
+                            <li class="pricing__feature">
+                                <i class="fas fa-check"></i>
+                                <span>Assorted pies (100 pcs)</span>
+                            </li>
+                            <li class="pricing__feature">
+                                <i class="fas fa-check"></i>
+                                <span>Mini pastries selection (50 pcs)</span>
+                            </li>
+                            <li class="pricing__feature">
+                                <i class="fas fa-check"></i>
+                                <span>Soft drinks & fresh juice</span>
+                            </li>
+                            <li class="pricing__feature">
+                                <i class="fas fa-check"></i>
+                                <span>Premium serving ware</span>
+                            </li>
+                            <li class="pricing__feature">
+                                <i class="fas fa-check"></i>
+                                <span>Small celebration cake</span>
+                            </li>
+                            <li class="pricing__feature pricing__feature--disabled">
+                                <i class="fas fa-times"></i>
+                                <span>On-site service</span>
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="btn btn--primary btn--block">Get Started</a>
+                    </div>
+
+                    <!-- Premium Package -->
+                    <div class="pricing__card fade-in">
+                        <div class="pricing__header">
+                            <h3 class="pricing__name">Premium</h3>
+                            <p class="pricing__subtitle">Complete event solution</p>
+                            <div class="pricing__price">
+                                <span class="price__currency">₦</span>
+                                <span class="price__amount">700,000</span>
+                                <span class="price__period">/ 100 guests</span>
+                            </div>
+                        </div>
+                        <ul class="pricing__features">
+                            <li class="pricing__feature">
+                                <i class="fas fa-check"></i>
+                                <span>Full menu selection (200 pcs)</span>
+                            </li>
+                            <li class="pricing__feature">
+                                <i class="fas fa-check"></i>
+                                <span>Premium pastries & desserts</span>
+                            </li>
+                            <li class="pricing__feature">
+                                <i class="fas fa-check"></i>
+                                <span>Full beverage service</span>
+                            </li>
+                            <li class="pricing__feature">
+                                <i class="fas fa-check"></i>
+                                <span>Elegant serving setup</span>
+                            </li>
+                            <li class="pricing__feature">
+                                <i class="fas fa-check"></i>
+                                <span>Custom tiered cake</span>
+                            </li>
+                            <li class="pricing__feature">
+                                <i class="fas fa-check"></i>
+                                <span>On-site staff service</span>
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="btn btn--outline btn--block">Get Started</a>
+                    </div>
+                </div>
+
+                <p class="pricing__note fade-in">
+                    <i class="fas fa-info-circle"></i>
+                    All packages can be customized. Contact us for special dietary requirements or custom requests.
+                </p>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta section" id="cta">
+            <div class="cta__parallax" aria-hidden="true"></div>
+            <div class="container">
+                <div class="cta__content fade-in">
+                    <span class="section__subtitle section__subtitle--light">Ready to Order?</span>
+                    <h2 class="cta__title">Can't Decide? Let Us Help!</h2>
+                    <p class="cta__description">
+                        Our team is ready to help you plan the perfect menu for your event. 
+                        Get in touch for personalized recommendations.
+                    </p>
+                    <div class="cta__buttons">
+                        <a href="contact.html" class="btn btn--white btn--lg">
+                            <i class="fas fa-phone"></i> Call Us Now
+                        </a>
+                        <a href="contact.html" class="btn btn--outline-white btn--lg">
+                            <i class="fas fa-envelope"></i> Send Inquiry
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <a href="index.html" class="footer__logo">
+                        <span class="logo-text">Waltop</span>
+                        <span class="logo-tagline">Catering</span>
+                    </a>
+                    <p class="footer__about">
+                        Crafting delicious Moments, One Treat at a Time. We specialize in premium 
+                        snacks and catering services for all occasions.
+                    </p>
+                   <div class="footer__social">
+                        
+                        <a href="https://www.tiktok.com/@waltopcatering?_r=1&_t=ZS-94qaSfilLAf" class="social__link" aria-label="Follow us on Tiktok" target="_blank">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://wa.me/2349094643016" class="social__link" aria-label="Follow us on WhatsApp" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__col">
+                    <h4 class="footer__title">Quick Links</h4>
+                    <ul class="footer__links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Our Menu</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col">
+                    <h4 class="footer__title">Our Services</h4>
+                    <ul class="footer__links">
+                        <li><a href="menu.html">Meat Pies</a></li>
+                        <li><a href="menu.html">Chicken Pies</a></li>
+                        <li><a href="menu.html">Custom Cakes</a></li>
+                        <li><a href="contact.html">Event Catering</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col">
+                    <h4 class="footer__title">Contact Us</h4>
+                    <ul class="footer__contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>23, luli house araromi crescent via community school oko baale Oju ore Ota.</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+2349094643016">+2349094643016</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:topeogunbiyi3@gmail.com">topeogunbiyi3@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Mon - Sat: 8:30AM - 7PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; <span id="currentYear"></span> Waltop Catering Services. All rights reserved.</p>
+                <div class="footer__legal">
+                    <a href="#" onclick="openModal('privacyModal'); return false">Privacy Policy</a>
+                    <a href="#" onclick="openModal('termsModal'); return false">Terms of Service</a>
+                    <a href="#" onclick="openModal('refundModal'); return false">Refund Policy</a>
+                </div>
+            </div>
+            <!-- Privacy Policy Modal -->
+<div id="privacyModal" class="legal-modal">
+  <div class="legal-modal-content">
+    <button class="legal-close" onclick="closeModal('privacyModal')">&times;</button>
+    <h2>Privacy Policy</h2>
+    <p>
+      We value your privacy. Any information you share with us, such as your name,
+      phone number, delivery details, and order information, is used only to process
+      your orders and provide a better customer experience.
+    </p>
+    <p>
+      We do not sell, rent, or share your personal information with third parties,
+      except when necessary to complete your order or delivery.
+    </p>
+  </div>
+</div>
+
+<!-- Terms of Service Modal -->
+<div id="termsModal" class="legal-modal">
+  <div class="legal-modal-content">
+    <button class="legal-close" onclick="closeModal('termsModal')">&times;</button>
+    <h2>Terms of Service</h2>
+    <p>
+      By placing an order with us, you agree to provide accurate information,
+      including your contact details and delivery location.
+    </p>
+    <p>
+      All orders are subject to availability and confirmation. We do our best to
+      prepare and deliver orders on time, but delays may occur due to traffic,
+      weather, or other unexpected situations.
+    </p>
+    <p>
+      Prices and availability may change without prior notice.
+    </p>
+  </div>
+</div>
+
+<!-- Refund Policy Modal -->
+<div id="refundModal" class="legal-modal">
+  <div class="legal-modal-content">
+    <button class="legal-close" onclick="closeModal('refundModal')">&times;</button>
+    <h2>Refund Policy</h2>
+    <p>
+      Due to the nature of our freshly made food products, all orders are generally
+      non-refundable once preparation has started.
+    </p>
+    <p>
+      If there is an issue with your order, such as receiving the wrong item or a
+      confirmed quality concern, please contact us as soon as possible so we can
+      review and resolve it fairly.
+    </p>
+    <p>
+      We are committed to customer satisfaction and will always do our best to make
+      things right where possible.
+    </p>
+  </div>
+</div>
+        </div>
+    </footer>
+
+    <!-- Sticky Order Button (Mobile) -->
+    <a href="contact.html" class="sticky-cta" aria-label="Get Quote">
+        <i class="fas fa-envelope"></i>
+        <span>Quote</span>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>

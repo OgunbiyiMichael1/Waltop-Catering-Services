@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Waltop Catering Services - our story, mission, and the passionate team behind your favorite snacks and treats.">
+    <meta name="keywords" content="about, Waltop, catering, bakery, team, story, mission">
+    <meta name="author" content="Waltop Catering Services">
+    
+    <title>About Us | Waltop Catering Services</title>
+    <link rel="icon" type="image/x-icon" href="waltop.jpeg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Fixed Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container" aria-label="Main navigation">
+            <a href="index.html" class="nav__logo">
+                <span class="logo-text">Waltop</span>
+                <span class="logo-tagline">Catering</span>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="menu.html" class="nav__link">Menu</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link active" aria-current="page">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+
+                <button class="nav__close" id="nav-close" aria-label="Close menu">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <div class="nav__actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+                <a href="menu.html" class="btn btn--primary nav__cta">Order Now</a>
+                <button class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="page-hero__parallax" aria-hidden="true"></div>
+            <div class="container">
+                <div class="page-hero__content fade-in">
+                    <span class="page-hero__subtitle">Get to Know Us</span>
+                    <h1 class="page-hero__title">Our Story</h1>
+                    <p class="page-hero__description">
+                        From a small kitchen dream to becoming your favorite catering service, 
+                        discover the passion behind every bite.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Story Section -->
+        <section class="about-story section" id="story">
+            <div class="container">
+                <div class="about-story__grid">
+                    <div class="about-story__image fade-in">
+                        <img 
+                            src="waltop.jpeg" 
+                            alt="Bakery interior with fresh pastries" 
+                            loading="lazy"
+                        >
+                       
+                    </div>
+
+                    <div class="about-story__content fade-in">
+                        <span class="section__subtitle">Our Beginning</span>
+                        <h2 class="section__title">A Recipe Born from Passion</h2>
+                        <p>
+                           Waltop Catering Services started as a small business in Ogun State, Nigeria,
+                with a dream to share our local flavors with the world. Today, we are proud 
+                to serve a wide range of Nigerian snacks loved by many.
+                        </p>
+                        <p>
+                            Today, we've grown from that small home kitchen to a fully-equipped bakery, 
+                            but our commitment to quality remains unchanged. Every pie, every cake, and 
+                            every pastry is still made with the same love and attention to detail that 
+                            started it all.
+                        </p>
+                        <p>
+                            We believe that great food brings people together. That's why we pour our 
+                            hearts into creating snacks and treats that make your gatherings special, 
+                            your celebrations memorable, and your everyday moments a little sweeter.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission & Values Section -->
+        <section class="mission section section--alt" id="mission">
+            <div class="container">
+                <div class="section__header fade-in">
+                    <span class="section__subtitle">What Drives Us</span>
+                    <h2 class="section__title">Our Mission & Values</h2>
+                    <p class="section__description">
+                        At Waltop Catering, we're guided by principles that ensure 
+                        every customer experience exceeds expectations.
+                    </p>
+                </div>
+
+                <div class="mission__grid">
+                    <!-- Mission Card -->
+                    <div class="mission__card fade-in">
+                        <div class="mission__icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3 class="mission__title">Our Mission</h3>
+                        <p class="mission__text">
+                            To deliver exceptional taste experiences through freshly baked 
+                            goods and outstanding catering services, making every event 
+                            and gathering deliciously memorable.
+                        </p>
+                    </div>
+
+                    <!-- Vision Card -->
+                    <div class="mission__card fade-in">
+                        <div class="mission__icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3 class="mission__title">Our Vision</h3>
+                        <p class="mission__text">
+                            To be the most trusted and beloved catering service in our 
+                            community, known for quality, creativity, and bringing joy 
+                            to every table we serve.
+                        </p>
+                    </div>
+
+                    <!-- Promise Card -->
+                    <div class="mission__card fade-in">
+                        <div class="mission__icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3 class="mission__title">Our Promise</h3>
+                        <p class="mission__text">
+                            Fresh ingredients, time-honored recipes, and personalized 
+                            service. We promise to treat every order, big or small, 
+                            with the same care and dedication.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Values Section -->
+        <section class="values section" id="values">
+            <div class="container">
+                <div class="values__grid">
+                    <div class="values__content fade-in">
+                        <span class="section__subtitle">Core Values</span>
+                        <h2 class="section__title">The Principles We Live By</h2>
+                        
+                        <div class="values__list">
+                            <div class="value__item">
+                                <div class="value__icon">
+                                    <i class="fas fa-medal"></i>
+                                </div>
+                                <div class="value__text">
+                                    <h4>Quality First</h4>
+                                    <p>
+                                        We never compromise on ingredients or process. From 
+                                        sourcing to serving, quality is non-negotiable.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="value__item">
+                                <div class="value__icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="value__text">
+                                    <h4>Passion in Every Bite</h4>
+                                    <p>
+                                        Our love for baking shines through in everything we 
+                                        create. Passion is our secret ingredient.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="value__item">
+                                <div class="value__icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="value__text">
+                                    <h4>Customer Focused</h4>
+                                    <p>
+                                        Your satisfaction drives us. We listen, adapt, and 
+                                        go the extra mile for every customer.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="value__item">
+                                <div class="value__icon">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                                <div class="value__text">
+                                    <h4>Sustainability</h4>
+                                    <p>
+                                        We care for our planet by sourcing locally, reducing 
+                                        waste, and using eco-friendly packaging.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="values__image fade-in">
+                        <img 
+                            src="happy customer.jpg" 
+                            alt="Happy Customer" 
+                            loading="lazy"
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team section section--alt" id="team">
+            <div class="container">
+                <div class="section__header fade-in">
+                    <span class="section__subtitle">Meet the Baker</span>
+                    <h2 class="section__title">The Hands Behind the Magic</h2>
+                    <p class="section__description">
+                        Get to know the passionate creator behind every delicious treat who make every 
+                        Waltop creation special.
+                    </p>
+                </div>
+
+                    <!-- Team Member 1 -->
+                    <div class="team__card fade-in">
+                        <div class="team__image">
+                            <img 
+                                src="owner.jpeg" 
+                                alt=" Waltop - Founder & Head Baker" 
+                                loading="lazy"
+                            >
+                            <div class="team__social">
+                                <a href="https://www.tiktok.com/@waltopcatering?_r=1&_t=ZS-94qaSfilLAf" class="social__link" aria-label="Follow us on Tiktok" target="_blank">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://wa.me/2349094643016" class="social__link" aria-label="Follow us on WhatsApp" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                            </div>
+                        </div>
+                        <div class="team__info">
+                            <h3 class="team__name">Temitope Ogunbiyi</h3>
+                            <span class="team__role">Founder & Creative Baker</span>
+                            <p class="team__bio">
+                                Every order is personally made with care, using fresh ingredients and a love for creating treats 
+                                that look as good as they taste.
+                            </p>
+                        </div>
+                    </div>
+             </section>
+
+                   <section class="cta section" id="cta">
+            <div class="cta__parallax" aria-hidden="true"></div>
+            <div class="container">
+                <div class="cta__content fade-in">
+                    <span class="section__subtitle section__subtitle--light">Join Our Journey</span>
+                    <h2 class="cta__title">Let's Create Something Delicious Together</h2>
+                    <p class="cta__description">
+                        Whether it's your first order or your hundredth, we're excited to 
+                        serve you. Reach out today and experience the Waltop difference.
+                    </p>
+                    <div class="cta__buttons">
+                        <a href="menu.html" class="btn btn--white btn--lg">
+                            <i class="fas fa-book-open"></i> Explore Our Menu
+                        </a>
+                        <a href="contact.html" class="btn btn--outline-white btn--lg">
+                            <i class="fas fa-envelope"></i> Get in Touch
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <a href="index.html" class="footer__logo">
+                        <span class="logo-text">Waltop</span>
+                        <span class="logo-tagline">Catering</span>
+                    </a>
+                    <p class="footer__about">
+                        Crafting delicious Moments, One Treat at a Time. We specialize in premium 
+                        snacks and catering services for all occasions.
+                    </p>
+                     <div class="footer__social">
+                        
+                        <a href="https://www.tiktok.com/@waltopcatering?_r=1&_t=ZS-94qaSfilLAf" class="social__link" aria-label="Follow us on Tiktok" target="_blank">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://wa.me/2349094643016" class="social__link" aria-label="Follow us on WhatsApp" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__col">
+                    <h4 class="footer__title">Quick Links</h4>
+                    <ul class="footer__links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Our Menu</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col">
+                    <h4 class="footer__title">Our Services</h4>
+                    <ul class="footer__links">
+                        <li><a href="menu.html">Meat Pies</a></li>
+                        <li><a href="menu.html">Chicken Pies</a></li>
+                        <li><a href="menu.html">Custom Cakes</a></li>
+                        <li><a href="contact.html">Event Catering</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col">
+                    <h4 class="footer__title">Contact Us</h4>
+                    <ul class="footer__contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>23, luli house araromi crescent via community school oko baale Oju ore Ota.</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+2349094643016">+2349094643016</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:topeogunbiyi3@gmail.com">topeogunbiyi3@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Mon - Sat: 8:30AM - 7PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+          <div class="footer__bottom">
+                <p>&copy; <span id="currentYear"></span> Waltop Catering Services. All rights reserved.</p>
+                <div class="footer__legal">
+                    <a href="#" onclick="openModal('privacyModal'); return false">Privacy Policy</a>
+                    <a href="#" onclick="openModal('termsModal'); return false">Terms of Service</a>
+                    <a href="#" onclick="openModal('refundModal'); return false">Refund Policy</a>
+                </div>
+            </div>
+            <!-- Privacy Policy Modal -->
+<div id="privacyModal" class="legal-modal">
+  <div class="legal-modal-content">
+    <button class="legal-close" onclick="closeModal('privacyModal')">&times;</button>
+    <h2>Privacy Policy</h2>
+    <p>
+      We value your privacy. Any information you share with us, such as your name,
+      phone number, delivery details, and order information, is used only to process
+      your orders and provide a better customer experience.
+    </p>
+    <p>
+      We do not sell, rent, or share your personal information with third parties,
+      except when necessary to complete your order or delivery.
+    </p>
+  </div>
+</div>
+
+<!-- Terms of Service Modal -->
+<div id="termsModal" class="legal-modal">
+  <div class="legal-modal-content">
+    <button class="legal-close" onclick="closeModal('termsModal')">&times;</button>
+    <h2>Terms of Service</h2>
+    <p>
+      By placing an order with us, you agree to provide accurate information,
+      including your contact details and delivery location.
+    </p>
+    <p>
+      All orders are subject to availability and confirmation. We do our best to
+      prepare and deliver orders on time, but delays may occur due to traffic,
+      weather, or other unexpected situations.
+    </p>
+    <p>
+      Prices and availability may change without prior notice.
+    </p>
+  </div>
+</div>
+
+<!-- Refund Policy Modal -->
+<div id="refundModal" class="legal-modal">
+  <div class="legal-modal-content">
+    <button class="legal-close" onclick="closeModal('refundModal')">&times;</button>
+    <h2>Refund Policy</h2>
+    <p>
+      Due to the nature of our freshly made food products, all orders are generally
+      non-refundable once preparation has started.
+    </p>
+    <p>
+      If there is an issue with your order, such as receiving the wrong item or a
+      confirmed quality concern, please contact us as soon as possible so we can
+      review and resolve it fairly.
+    </p>
+    <p>
+      We are committed to customer satisfaction and will always do our best to make
+      things right where possible.
+    </p>
+  </div>
+</div>
+        </div>
+    </footer>
+
+    <!-- Sticky Order Button (Mobile) -->
+    <a href="menu.html" class="sticky-cta" aria-label="Order Now">
+        <i class="fas fa-shopping-bag"></i>
+        <span>Order</span>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>
